@@ -2,25 +2,20 @@ package task.car;
 
 public class Starter {
     public static void main(String[] args) {
-        Engine engine = new Engine();
-        engine.capacity = 1200;
-        engine.kind = "diesel";
-        engine.name = "DCI";
+        Engine engine = new Engine("v6", 4000, "PETROL");
+        Tires tires = new Tires("china", true);
 
-        Tires tires = new Tires();
-        tires.isSummerOption = false;
-        tires.model = "FromChina123";
+        Car car = new Car("Focus", "Ford", engine, tires);
 
-        Car car = new Car();
-        car.brand  = "Ford";
-        car.model = "Focus";
-        car.engine = engine;
-        car.tires  = tires;
+        Car carNew = new Car("Focus", "Ford", 1200, true);
+        carNew.getEngine().setCapacity(2000);
+        carNew.setModel("dasdasdasd");
+
 
 
         //nazwa opon samochodu
-        System.out.println(car.tires.model);
+        System.out.println(car.getTires().getModel());
         //pojemnosc silnika
-        System.out.println(car.engine.capacity);
+        System.out.println(car.getEngine().getName());
     }
 }

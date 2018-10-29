@@ -7,14 +7,6 @@ public class Main {
         int def = 15;
         ///
 
-        Ork ork1 = new Ork();
-        ork1.attack = 10;
-        ork1.def = 16;
-        ork1.name = "Oskar1";
-
-        Ork ork2 = new Ork();
-        ork2.attack = 20;
-        ork2.def = 10;
 
 
         Person personWhoHasMyMoney = new Person();
