@@ -2,7 +2,7 @@ package oop.tasks;
 
 public class MyWater {
     private static double SMALL_BOTTLE = 0.5;
-    private static int MEDIUM_BOTTLE = 1.5;
+    private static double MEDIUM_BOTTLE = 1.5;
     private static double BIG_BOTTLE = 2.5;
 
     private int countOfSmall;
