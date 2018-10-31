@@ -1,16 +1,25 @@
 package task.classflow;
 
 public class PhoneBook {
-    private String value;
+    private String number;
+    private String lastname;
 
 
     public PhoneBook() { }
 
-    public String getValue() {
-        return value;
+    public String getNumber() {
+        return number;
     }
 
-    public void setValue(String value) {
-        this.value = value;
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 }

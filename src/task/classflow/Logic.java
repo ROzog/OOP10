@@ -10,6 +10,6 @@ public class Logic {
     }
 
     public void someonePressOne() {
-        System.out.println(phoneBook.getValue());
+        System.out.println(phoneBook.getNumber());
     }
 }
