@@ -6,4 +6,8 @@ public class BigOrkMonster extends OrcMonster {
     }
 
 
+    @Override
+    public void attack() {
+        System.out.println("big monsterowy atak");
+    }
 }

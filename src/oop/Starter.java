@@ -26,10 +26,17 @@ public class Starter {
 
         int sum = 0;
         for (Monster monster : monsters) {
-            sum += monster.getAttack();
+            monster.attack();
+            //sum += monster.getAttack();
         }
 
+
+        if(Utils.isInternetConnected()){
+            System.out.println("mam internet ;)");
+        }
         System.out.println(sum / 6);
+
+
 
     }
 }

@@ -1,6 +1,6 @@
 package oop;
 
-public class Monster {
+public abstract class Monster {
     private int def;
     private int attack;
 
@@ -10,9 +10,7 @@ public class Monster {
     }
 
 
-    public void attack() {
-        System.out.println("To jest default attack");
-    }
+    public abstract void attack();
 
     public int getDef() {
         return def;
