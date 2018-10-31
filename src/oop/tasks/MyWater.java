@@ -27,7 +27,7 @@ public class MyWater {
         countOfBig += howMany;
     }
 
-    //tests
+    //kod w galezi
     public double countAllWater(){
          return countOfSmall * BIG_BOTTLE
                  + countOfMedium * MEDIUM_BOTTLE
