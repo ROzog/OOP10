@@ -73,10 +73,10 @@ public class Menu {
              if(payment != null) {
                   if(payment.isCost()){
                       //Wyliczamy kwote netto z kwoty brutto
-                      sumOfCost += payment.getValue() *  (1 - payment.getVat());
+                      sumOfCost += payment.getValue() *  (1 - payment.getVat() / 100);
                       vatValueCost += payment.getValue() * (payment.getVat() / 100);
                   }else{
-                      sumOfIncome += payment.getValue() *  (1 - payment.getVat());
+                      sumOfIncome += payment.getValue() *  (1 - payment.getVat() / 100);
                       vatValueCost += payment.getValue() * (payment.getVat() / 100);
                   }
              }
