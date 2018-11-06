@@ -1,5 +1,7 @@
 package task.lottery.third;
 
+import java.util.Objects;
+
 public class Player {
     private String name;
     private int age;
@@ -24,5 +26,20 @@ public class Player {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Player player = (Player) o;
+        return age == player.age &&
+                Objects.equals(name, player.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
     }
 }
