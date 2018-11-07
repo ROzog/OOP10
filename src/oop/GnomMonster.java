@@ -1,6 +1,6 @@
 package oop;
 
-public class GnomMonster extends Monster {
+public class GnomMonster extends Monster implements CanThrowSpell {
     public GnomMonster(int def, int attack) {
         super(def, attack);
     }
@@ -10,4 +10,8 @@ public class GnomMonster extends Monster {
 
     }
 
+    @Override
+    public void throwSpell() {
+        System.out.println("rzuuuucam czaar");
+    }
 }

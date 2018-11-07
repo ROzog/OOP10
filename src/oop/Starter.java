@@ -1,5 +1,9 @@
 package oop;
 
+import java.util.AbstractList;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Starter {
     public static void main(String[] args) {
         OrcMonster orcMonster = new OrcMonster(10, 10);
@@ -31,12 +35,17 @@ public class Starter {
         }
 
 
-        if(Utils.isInternetConnected()){
-            System.out.println("mam internet ;)");
+
+
+        GnomMonster gnomMonster = new GnomMonster(1, 2);
+        gnomMonster.throwSpell();
+
+        List<CanThrowSpell> spells = new ArrayList<>();
+        spells.add(gnomMonster);
+
+        for (CanThrowSpell spell : spells) {
+            spell.throwSpell();
         }
-        System.out.println(sum / 6);
-
-
 
     }
 }

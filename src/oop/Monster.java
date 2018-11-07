@@ -1,6 +1,6 @@
 package oop;
 
-public abstract class Monster {
+public abstract class Monster{
     private int def;
     private int attack;
 
@@ -11,6 +11,7 @@ public abstract class Monster {
 
 
     public abstract void attack();
+
 
     public int getDef() {
         return def;

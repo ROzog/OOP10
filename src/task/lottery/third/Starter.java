@@ -2,7 +2,7 @@ package task.lottery.third;
 
 public class Starter {
     public static void main(String[] args) {
-        Lottery lottery = new Lottery(4, "Grasz o 100000000 zł");
+        Lottery lottery = new Lottery( "Grasz o 100000000 zł");
 
         Player player = new Player("Damian", 30);
         Player player1 = new Player("Kacper", 35);
